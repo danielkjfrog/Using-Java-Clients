@@ -35,9 +35,10 @@ class clientBintray {
                     new FileInputStream("src/FileUpload/artifactory-java-client-services-0.17.jar"
                     ))
 
-        } catch (Exception gce){
-//            FileNotFoundException
-            println(gce.printStackTrace())
+            println('File successfully uploaded.')
+
+        } catch (FileNotFoundException fnf){
+            println('File not found. Check file path.')
         }
     }
 
@@ -47,11 +48,12 @@ class clientBintray {
         HttpResponse resp = client.execute(req)
         InputStream file = resp.getEntity().getContent()
         IOUtils.copy(file, new FileOutputStream('src/FileDownload/package-list'))
+
+        println('File successfully downloaded.')
     }
 
     static void main (args) {
-//        uploadFile_bintray()
+        uploadFile_bintray()
         download_bintray()
-
     }
 }

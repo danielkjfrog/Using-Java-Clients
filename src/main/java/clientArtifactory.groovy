@@ -16,8 +16,9 @@ class clientArtifactory {
                     .upload("test/artifactory-java-client-services-0.17.jar",
                     (new FileInputStream("src/FileUpload/artifactory-java-client-services-0.17.jar")))
                     .doUpload()
-        } catch (Exception gce){
-            println(gce.printStackTrace())
+            println('File successfully uploaded.')
+        } catch (FileNotFoundException fnf){
+            println('File not found. Check file path.')
         }
     }
 
@@ -30,15 +31,15 @@ class clientArtifactory {
                     .doDownload()
 
             IOUtils.copy(downAtrifact, new FileOutputStream('src/FileDownload/artifactory-java-client-services-0.17.jar'))
+            println('File successfully downloaded.')
 
-        } catch (Exception gce){
-            println(gce.printStackTrace())
+        } catch (FileNotFoundException fnf){
+            println('File not found. Check file path.')
         }
     }
 
     static void main (args) {
-//        uploadFile_artifactory("http://127.0.0.1:8081/artifactory", "admin", "password")
+        uploadFile_artifactory("http://127.0.0.1:8081/artifactory", "admin", "password")
         downloadFile_artifactory("http://127.0.0.1:8081/artifactory", "admin", "password")
     }
-
 }
