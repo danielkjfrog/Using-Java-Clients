@@ -1,0 +1,4 @@
+com.jfrog.bintray.client.impl
+com.jfrog.bintray.client.impl.handle
+com.jfrog.bintray.client.impl.model
+com.jfrog.bintray.client.impl.util

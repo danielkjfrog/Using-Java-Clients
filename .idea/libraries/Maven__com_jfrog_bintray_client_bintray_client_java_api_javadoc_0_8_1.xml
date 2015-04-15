@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.jfrog.bintray.client:bintray-client-java-api:javadoc:0.8.1">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/jfrog/bintray/client/bintray-client-java-api/0.8.1/bintray-client-java-api-0.8.1-javadoc.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/com/jfrog/bintray/client/bintray-client-java-api/0.8.1/bintray-client-java-api-0.8.1-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/jfrog/bintray/client/bintray-client-java-api/0.8.1/bintray-client-java-api-0.8.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
